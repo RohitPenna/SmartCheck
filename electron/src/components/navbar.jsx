@@ -21,13 +21,15 @@ const Navbar = () => {
       <ul className="space-y-6 w-full px-4 flex flex-col items-start">
 
         {/* Profile Button */}
-        <Link
-          to="/profile" // Update to the correct profile route
-          className="hover:bg-red-600 flex items-center py-2 px-4 rounded-md transition w-full"
-        >
-          <AccountCircleIcon className="mr-2" /> {/* Profile Icon */}
-          Profile
-        </Link>
+        <li>
+          <Link
+            to="/profile" // Update to the correct profile route
+            className="hover:bg-red-600 flex items-center py-2 px-4 rounded-md transition w-full"
+          >
+            <AccountCircleIcon className="mr-2" /> {/* Profile Icon */}
+            Profile
+          </Link>
+        </li>
 
         {/* Dashboard Link */}
         <li>
@@ -77,11 +79,10 @@ const Navbar = () => {
       {/* Log In Button */}
       <div className="mt-auto w-full">
         <Link
-          to="/login" // Replace with your login route or logic
           className="hover:bg-red-600 flex items-center py-3 px-6 rounded-md transition text-xl bg-red-600 w-full"
         >
           <PersonAddIcon className="mr-2" />
-          Log In
+          Log Out
         </Link>
       </div>
     </nav>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import streetImage from './pic.jpg';
 import { Link } from "react-router-dom"; // Import Link for navigation
 
+
 const Home = () => {
   // Fake Reviews Data
   const reviews = [
@@ -23,16 +24,17 @@ const Home = () => {
     }
   ];
 
+
   return (
     <div className="flex flex-col min-h-screen bg-[radial-gradient(circle_at_18.7%_37.8%,rgb(250,250,250)_0%,rgb(225,234,238)_90%)]">
       <section id="home" className="hero flex-grow flex justify-center items-center text-black mb-8 mt-16 relative"> {/* Removed bg-white */}
         <div className="max-w-[1248px] w-full px-4 py-30">
           <div className="text-center relative">
             {/* Image */}
-            <img 
-              src={streetImage} 
-              alt="Description of the image" 
-              className="w-full h-auto max-w-[1248px] mx-auto mb-4 rounded-3xl opacity-90 bg-transparent" 
+            <img
+              src={streetImage}
+              alt="Description of the image"
+              className="w-full h-auto max-w-[1248px] mx-auto mb-4 rounded-3xl opacity-90 bg-transparent"
             />
             {/* Text Overlay */}
             <div className="absolute inset-0 flex flex-col justify-center items-center text-white z-10">
@@ -50,6 +52,7 @@ const Home = () => {
         </div>
       </section>
 
+
       {/* Why Us Section */}
       <section id="why-us" className="min-h-[50vh] flex justify-center items-center mb-8">
         <div className="border border-gray-300 rounded-[30px] p-24 max-w-[1248px] w-full text-center">
@@ -59,6 +62,7 @@ const Home = () => {
           </p>
         </div>
       </section>
+
 
       {/* Reviews Section */}
       <section id="reviews" className="py-16 text-center">
@@ -78,4 +82,8 @@ const Home = () => {
   );
 };
 
+
 export default Home;
+
+
+
